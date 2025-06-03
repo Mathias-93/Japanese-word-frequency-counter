@@ -51,7 +51,7 @@ fs.readFile(filePath, "utf8", (err, data) => {
       // Sort by frequency
       const sorted = Object.entries(frequencyMap)
         .sort((a, b) => b[1] - a[1])
-        .slice(100, 200); // Top 100 words
+        .slice(100, 250);
 
       console.log("Top words:\n");
       sorted.forEach(([word, count]) => {
